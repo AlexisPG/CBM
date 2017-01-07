@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="row">
+        <h1>Administration</h1>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+        <table>
+            <thead>
+                <tr>
+                    <th><h2>Titre</h2></th>
+                    <th><h2>Article</h2></th>
+                    <th><h2>Auteur</h2></th>
+                    <th><h2>Catégorie</h2></th>
+                    <th><h2></h2></th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach($articles as $article): ?>
+                    <tr>
+                        <td>
+                            <a href="show_post.php?id=<?= htmlentities($article['id']) ?>" target="_blank"> <?=  htmlentities($article['title']) ?></a>
+                        </td>
+                        <td>
+                            <?= nl2br(htmlentities(substr($article['content'], 0, 200))) ?> [...] <br>
+                            <a href="show_post.php?id=<?= $article['id'] ?>">Lire la suite...</a>
+                        </td>
+                        <td>
+                            <?= $article['firstName'] ?> <?= $article['lastName'] ?>
+                        </td>
+                        <td>
+                            <?= $article['titles'] ?>
+                        </td>
+                        <td>
+                            <a class="edit" href="edit_post.php?id=<?= $article['id'] ?>"><i class="fa fa-pencil"></i></a>
+                            <a class="remove" href="delete_post.php?id=<?= $article['id'] ?>"><i class="fa fa-remove"></i></a>
+                        </td>
+                    </tr>
+                <?php endforeach ?>
+            </tbody>
+        </table>
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
+<p></p>
+<div class="container">
+    <div class="row">
+        <nav>
+            <a href="add_article.php" class="btn btn-success">Rédiger un nouvel article</a>
+        </nav>
+    </div>
+</div>

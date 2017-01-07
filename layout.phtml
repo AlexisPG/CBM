@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Caroline BECARD-MARINETTI - Avocat <?php if(isset($title)):?> - <?= $title; endif ?></title>
+
+    <!-- Feuilles de style externes -->
+    <link rel="stylesheet" href="css/normalize-3.0.3.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Octicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/3.0.1/css/primer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      
+
+    <!-- TODO : Mettre le CSS des FONTS ICI -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Cormorant+Garamond|Pontano+Sans" rel="stylesheet">
+    <!-- Feuilles de style du site -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <!-- Top Navbar du site -->
+
+    <nav>
+        <div class="container-fluid">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                <li><a href="https://fr.linkedin.com/in/caroline-becard-marinetti-8b1028102" target="_blank"><span class="fa fa-linkedin"></span></a></li>
+                <li><a href="#">FR</a></li>
+                <li class="disabled"><a href="#" >EN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Logo -->
+    <div class="navbar-center container-fluid">
+        <div class="row">
+            <div class="logo container">
+                <a href="index.php">
+                    <h1 class="logo-CBM">CBM<br>
+                        <span class="avocat">Avocat</span>
+                        <i class="fa fa-bank"></i>
+                    </h1>
+                    
+                </a>
+            </div>
+        </div>
+        <!-- Nav bar -->
+        <div class="row">
+            <nav class="menu-top container-fluid">
+                <ul class="nav nav-tabs">
+                    <li><a role="presentation" href="presentation.php">Présentation</a></li>
+                    <li><a role="presentation" href="domaines-intervention.php">Domaines d'intervention</a></li>
+                    <li><a role="presentation" href="honoraires.php">Honoraires</a></li>
+                    <li><a role="presentation" href="blog.php">Publications</a></li>
+                    <li><a role="presentation" href="contact.php">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- MAIN -->
+    <main>
+        <!-- Chargement du template PHTML -->
+        <?php include $template.'.phtml' ?>
+    </main>
+    
+    <!-- Footer du site -->
+    <footer class="container-fluid">
+        <div class="row"> 
+            <ul class="nav nav-tabs"> 
+                    <li><a role="presentation" href="presentation.php">Présentation</a></li>
+                    <li><a role="presentation" href="domaines-intervention.php">Domaines d'intervention</a></li>
+                    <li><a role="presentation" href="honoraires.php">Honoraires</a></li>
+                    <li><a role="presentation" href="blog.php">Publications</a></li>
+                    <li><a role="presentation" href="contact.php">Contact</a></li>
+                    <li><a role="presentation" href="mentions-legales.php">Mentions légales</a></li>
+                    <?php if (!isset($_SESSION['auth'])) : ?>
+                        <li><a href="login.php">Connexion</a>
+                    <?php else : ?>
+                        <li><a href="admin.php">Administration</a></li>
+                        <li><a href="logout.php">Deconnexion</a></li>
+                    <?php endif ?>
+            </ul>
+            <address>Maître Caroline BECARD-MARINETTI - 
+                Le cabinet : 62 rue de Maubeuge, 75009 PARIS - 
+                
+                <abbr title="e-mail">E-mail</abbr> : <a href="mailto:cmarinetti@hotmail.fr">cmarinetti@hotmail.fr</a>
+                <abbr title="Téléphone">Tél</abbr> : <a href="tel:+33185086887">+33 1 85 08 68 87</a> - <abbr title="Fax">Fax</abbr> : +33 1 42 81 36 43  
+            </address>
+            <div>
+                <p><em>©CBM 2017<em></p>
+            </div>
+        </div>
+    </footer>
+</div>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

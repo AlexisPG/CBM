@@ -1,0 +1,81 @@
+<!-- Contact -->
+<div class="container">
+    <div class="row">
+        <h1>Contact</h1>
+    </div>
+</div>
+
+<img class="img-responsive" alt="Palais de justice" src="img/contact.png">
+
+<!-- Contenu -->
+<div class="container">
+    <div class="row">
+        <h2>Pour contacter le cabinet ou demander un devis...</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at urna vel justo aliquet aliquet id in lectus. Proin ut sem dictum, commodo justo id, rhoncus arcu. Nullam eget purus rhoncus elit cursus egestas. Sed ac ornare erat, ut gravida risus. Quisque placerat quam ut lorem faucibus, et egestas ligula malesuada. Donec in euismod sapien, eu sollicitudin est. Integer vitae elit nisi. Proin vel nulla consectetur, vestibulum nunc sed, fringilla lorem. </p>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <!-- Coordonnées et MAP -->
+        <div class="no-padding-left col-md-5">
+            <address>
+                <h4>Adresse</h4>
+                <p>62 rue de Maubeuge - 75009 PARIS</p>
+                <h4>Téléphone</h4>
+                <abbr title="Téléphone">Tel :</abbr><a href="tel:+33185086887"> +33 1 85 08 68 87</a><br>
+                <abbr title="Fax">Fax :</abbr> +33 1 42 81 36 43
+                <div class="row"><p></p></div>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.911161896094!2d2.3453148156751076!3d48.87897007928955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e6a61093591%3A0x244daa8b619c7c75!2s62+Rue+de+Maubeuge%2C+75009+Paris!5e0!3m2!1sfr!2sfr!4v1479748573891" width="" height="" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </address>
+        </div>
+
+        <!-- Formulaire de contact -->
+        <!-- TODO : - mettre en required les champs 
+                    - Rajouter des champs pour affiner la recherche : profession, type de demande...
+        -->
+        <div class="no-padding-right col-md-7">
+            <h4>Pour me contacter, remplissez le formulaire suivant : </h4>
+            <form action="contact.php" method="post">
+                <!-- Prénom -->
+                <div class="no-padding-left col-md-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="firstName" placeholder="Votre prénom">
+                    </div>  
+                </div>
+                <!-- Nom -->
+                <div class="no-padding-right col-md-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="lastName" placeholder="Votre nom">
+                    </div>  
+                </div>
+                <!-- Email -->
+                <div class="no-padding-left col-md-6">
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="Votre email">
+                    </div>
+                </div>
+                <!-- Téléphone -->
+                <div class="no-padding-right col-md-6">
+                    <div class="form-group">
+                        <input type="tel" class="form-control" id="phone" placeholder="Votre téléphone" maxlength="13">
+                    </div>
+                </div>
+                <!-- Message -->
+                    <div class="form-group">
+                        <textarea class="form-control" id="lastName" placeholder="Votre message" rows="10"></textarea>
+                    </div>  
+                <!-- Bouton d'envoi -->
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+

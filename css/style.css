@@ -1,0 +1,243 @@
+/* GLOBAL */
+*{
+	text-decoration:none;
+	font-family: 'Pontano Sans', sans-serif;
+}
+
+main{
+	margin-bottom: 50px;
+}
+
+h1, h2, h2 a, h3, h4, legend{
+	font-family: 'Playfair Display', serif;
+}
+
+h1{
+	text-align: center;
+	margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+h2{
+	font-size: 2.5rem;
+	font-family: 'Playfair Display', serif;
+	margin-top: 4rem;
+	color: #be9d50;
+	text-align: left;
+}
+
+h3{
+	color: #777;
+	font-size: 2rem;
+}
+
+h4{
+	line-height: 5rem;
+	font-size: 2rem;
+	color: #be9d50;
+	margin-top: 0;
+}
+
+p, li{
+	color: #777;
+	font-family: 'Pontano Sans', sans-serif;
+	text-align: justify;
+}
+
+p{
+	margin-bottom: 2rem;
+}
+
+a{
+	color: #be9d50;
+}
+
+a:hover{
+	color: #756130;
+}
+
+.no-padding-left{
+	padding-left: 0; 
+}
+
+.no-padding-right{
+	padding-right: 0; 
+}
+
+.text-center{
+	text-align: center;
+}
+
+/* LOGO */
+.logo a .logo-CBM{
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	font-family: 'Cormorant Garamond', serif;
+	color: #be9d50
+} 
+/* TODO : changer la couleur de Avocat en gold */
+
+.logo a .logo-CBM .avocat{
+	line-height: 1rem;
+	font-size: large;
+	text-align: center;
+}
+.logo a .logo-CBM i{
+	display: block;
+}
+
+.logo a:hover{
+	text-decoration: none;
+}
+
+.logo a:hover,
+.logo a .logo-CBM:hover{
+	color: #756130;
+}
+
+/*  Barre de navigation TOP  */
+.logo{
+	text-align: center;
+	font-size: 4rem;
+}
+
+.logo:hover{
+	text-decoration: none;
+}
+
+.menu-top {
+	justify-content: center;
+    display: flex;
+    margin-top: 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+.nav-tabs{
+	border-bottom: none;
+}
+
+/*      ---------      MAIN     ---------    */
+
+.content-standard{
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+/* HP > NAV icone */
+
+.container .nav{
+	padding-right: 0;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.container .nav li {
+	padding-right: 0;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+.container .nav li a{
+	color: #777;
+	text-align: center;
+}
+
+.container .nav li a:hover{
+	background-color: white;
+	color: #be9d50;
+	border-top: 1px solid #be9d50;
+}
+
+.container .nav li a i{
+	display: block;
+	color: #be9d50;
+	font-size: 3rem;
+	margin-bottom: 1rem;
+
+}
+
+/*  PAGE > Contenu */
+
+.title-middle{
+	font-size: 2.5rem;
+	font-family: 'Playfair Display', serif;
+	margin-top: 4rem;
+	color: #777;
+	border-bottom: 1px dashed gray;
+	text-align: center;
+}
+
+.list-bullpoint{
+	list-style-type: circle;
+}
+
+/* FORMULAIRE et Contact */
+.form-group {
+	width: 100%;
+}
+
+.btn-primary:hover{
+	background-image: none;
+	background-color: none;
+}
+
+
+
+/* FOOTER */
+
+footer{
+	border-top: 1px solid #be9d50;
+	background-color: #03224C;
+	text-align: center;
+}
+
+footer .nav-tabs{
+	justify-content: center;
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+footer a{
+	color: white;
+}
+
+footer address, footer p {
+	color: #be9d50;
+	text-align: center;
+}
+
+footer p{
+	font-size: small;
+
+}
+
+/* BLOG */
+
+/* Blog post list */
+ul{
+	list-style-type: none;
+}
+
+article a {
+	font-weight: bold;
+}
+
+h2 + article:first-letter {
+    font-size: 2.7em;
+    line-height: 1;
+    font-weight: 400;
+    margin: 0 5px -5px 0;
+    padding: 7px 0 0 0;
+    float: left;
+    font-family: 'Playfair Display', serif;
+    color: #be9d50;
+}
+
+/* Blog article */
+
+.fa-blog-post{
+	padding-bottom: 7px;
+	font-size: small;
+}
+
+

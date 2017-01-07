@@ -1,0 +1,29 @@
+<!-- Page d'ajout d'un article -->
+<h2><i class="fa fa-pencil"></i> Editer un nouvel article</h2>
+
+<!-- Formulaire de saisie pour modifier un article -->
+<form class="generic-form" action="edit_post.php" method="post">
+
+    <input type="hidden" name="id" value="<?= $article['id'] ?>">
+    <fieldset>
+        <legend><i class="fa fa-sticky-note-o"></i> Modifier l'article "<?= $article['title'] ?>"</legend>
+        <ul>
+            <li>
+                <label for="title">Titre :</label>
+                <input type="text" id="title" name="title" value="<?= $article['title'] ?>">
+            </li>
+            <li>
+
+                <label class="textarea" for="contents">Article :</label>
+                <textarea id="contents" name="contents" rows="15"><?= $article['content'] ?>
+                </textarea>
+            </li>
+
+            <li>
+                <button class="button button-primary" type="submit">Enregistrer</button>
+                <a class="button button-cancel" href="admin.php">Annuler</a>
+            </li>
+        </ul>
+
+    </fieldset>
+</form>
