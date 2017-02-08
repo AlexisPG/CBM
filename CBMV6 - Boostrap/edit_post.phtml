@@ -1,0 +1,38 @@
+<!-- Page de modification d'un article -->
+<div class="container">
+    <div class="row">
+        <h1><i class="fa fa-pencil"></i> Editer un article</h1>
+    </div>
+</div>
+
+<!-- Formulaire de saisie pour modifier un article -->
+<div class="container">
+    <div class="row col-lg-12">
+        <form class="generic-form" action="edit_post.php" method="post">
+            <input type="hidden" name="id" value="<?= $article['id'] ?>">
+            <fieldset>
+                <legend><i class="fa fa-sticky-note-o"></i> Modification de l'article "<span class="span-italic-bold-yellow"><?= $article['title'] ?></span>"</legend>
+                <ul class="list-bullpoint list-bullpoint-blog">
+                    <li>
+                        <div class="form-group">
+                        <label for="title">Titre :</label>
+                        <input type="text" id="title" name="title" class="form-control" value="<?= $article['title'] ?>">
+                        </div>
+                    </li>
+                    <li>
+                        <label class="textarea" for="contents">Article :</label>
+                        <textarea id="contents" name="contents" rows="15"><?= $article['content'] ?>
+                </textarea>
+                    </li>
+                    <br>
+                    <li>
+                        <button class="btn btn-primary" type="submit"><i class="fa fa-check"></i> Mettre à jour</button>
+                        <a class="btn btn-danger" href="admin.php"><i class="fa fa-times"></i> Annuler</a>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+        <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+        <script>tinymce.init({ selector:'textarea' });</script>
+    </div>
+</div>
